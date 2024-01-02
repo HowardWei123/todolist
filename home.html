@@ -7,12 +7,18 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" 
+        rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <main class="app">
+
+        <header>
+            <h1>Your ToDo List</h1>
+        </header>
+
         <section class="greeting">
             <h2 class="title">
                 Hello, <input type="text" id="name" placeholder="Name here">
@@ -22,7 +28,7 @@
         <section class="create-list">
             <h3>CREATE TASK</h3>
 
-            <form id="to-do-form">
+            <form id="todo-form">
                 <h4>What needs to be done?</h4>
                 <input 
                     type="text" 
@@ -55,27 +61,28 @@
 
                 </div>
 
-                <input type="submit" class="Add todo">
+                <input type="submit" class="Add-todo">
             </form>
         </section>
 
         <section class="todo-list">
             <h3>TODO List</h3>
             <div class="list" id="todo-list">
-                <div class="todo-item">
+                <!-- <div class="todo-item done">
                     <label>
                         <input type="checkbox">
                         <span class="bubble business"></span>
                     </label>
-                </div>
 
-                <div class="todo-content">
-                    <input type="text" value="touch grass" readonly>
-                </div>
+                    <div class="todo-content">
+                        <input type="text" value="touch grass" readonly>
+                    </div>
+    
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
 
-                <div class="actions">
-                    <button class="edit">Edit</button>
-                    <button class="delete">Delete</button>
                 </div>
 
                 <div class="todo-item">
@@ -83,16 +90,18 @@
                         <input type="checkbox">
                         <span class="bubble personal"></span>
                     </label>
-                </div>
 
-                <div class="todo-content">
-                    <input type="text" value="touch moar grass" readonly>
-                </div>
+                    <div class="todo-content">
+                        <input type="text" value="touch moar grass" readonly>
+                    </div>
+    
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
 
-                <div class="actions">
-                    <button class="edit">Edit</button>
-                    <button class="delete">Delete</button>
-                </div>
+                </div> Shift Alt A to comment out highlighted code--> 
+
             </div>
         </section>
     </main>
