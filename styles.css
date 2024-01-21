@@ -1,7 +1,7 @@
 :root {
-    --primary: #EA40A4;
+    --primary: #049604;
     --business: #3A82EE;
-    --personal: var(--primary);
+    --personal: #ffa600;
     --light: #EEE;
     --gray: #888;
     --dark: #313154;
@@ -10,14 +10,15 @@
     --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 
     --business-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
-    --personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
+    --personal-glow: 0px 0px 4px rgba(255, 166, 0, 0.75);
+    --submit-glow: 0px 0px 4px rgba(4, 150, 4, 0.75);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Oswald', 'sans-serif';
+    font-family: 'Montserrat', 'sans-serif';
 }
 
 input:not([type="radio"]):not([type="checkbox"]), button {
@@ -38,6 +39,10 @@ section {
     margin-bottom: 2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+}
+
+h1 {
+    margin-left: 1rem;
 }
 
 h3 {
@@ -71,7 +76,7 @@ h4 {
     font-weight: 700;
 }
 
-.create-list input[type="text"] {
+.create-todo input[type="text"] {
     display: block;
     width: 100%;
     font-size: 1.125rem;
@@ -83,14 +88,14 @@ h4 {
     margin-bottom: 1.5rem;
 }
 
-.create-list .options {
+.create-todo .options {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
     margin-bottom: 1.5rem;
 }
 
-.create-list .options label {
+.create-todo .options label {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,13 +150,13 @@ input:checked ~ .bubble::after  {
     opacity: 1;
 }
 
-.create-list .options label div {
+.create-todo .options label div {
     color: var(--dark);
     font-size: 1.125rem;
     margin-top: 1rem;
 }
 
-.create-list input[type="submit"] {
+.create-todo input[type="submit"] {
     display: block;
     width: 100%;
     font-size: 1.125rem;
@@ -159,13 +164,13 @@ input:checked ~ .bubble::after  {
     color: #FFF;
     background-color: var(--primary);
     border-radius: 0.5rem;
-    box-shadow: var(--personal-glow);
+    box-shadow: var(--submit-glow);
     cursor: pointer;
     transition: 0.25s ease-in-out;
 }
 
-.create-list input[type="submit"]:hover {
-    opacity: 0.5;
+.create-todo input[type="submit"]:hover {
+    opacity: 0.6;
 }
 
 .todo-list .list {
@@ -212,7 +217,7 @@ input:checked ~ .bubble::after  {
 }
 
 .todo-item .actions button:hover {
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .todo-item .actions .edit {

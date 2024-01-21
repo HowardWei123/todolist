@@ -7,7 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@300;400;600&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
@@ -21,20 +21,20 @@
 
         <section class="greeting">
             <h2 class="title">
-                Hello, <input type="text" id="name" placeholder="Name here">
+                Hello, <input type="text" id="name" placeholder="Name here" />
             </h2>
         </section>
 
-        <section class="create-list">
+        <section class="create-todo">
             <h3>CREATE TASK</h3>
 
-            <form id="todo-form">
+            <form id="new-todo-form">
                 <h4>What needs to be done?</h4>
                 <input 
                     type="text" 
                     name="content" 
                     id="content" 
-                    placeholder="e.g. touch grass">
+                    placeholder="e.g. touch grass" />
                 
                 <h4>Pick a category</h4>
                 <div class="options">
@@ -44,7 +44,7 @@
                             type="radio" 
                             name="category" 
                             id="category1" 
-                            value="business">
+                            value="business" />
                         <span class="bubble business"></span>
                         <div>Business</div>
                     </label>
@@ -54,59 +54,24 @@
                             type="radio" 
                             name="category" 
                             id="category2" 
-                            value="personal">
+                            value="personal" />
                         <span class="bubble personal"></span>
                         <div>Personal</div>
                     </label>
 
                 </div>
 
-                <input type="submit" class="Add-todo">
+                <input type="submit" value="Add Todo" />
             </form>
         </section>
 
         <section class="todo-list">
             <h3>TODO List</h3>
-            <div class="list" id="todo-list">
-                <!-- <div class="todo-item done">
-                    <label>
-                        <input type="checkbox">
-                        <span class="bubble business"></span>
-                    </label>
-
-                    <div class="todo-content">
-                        <input type="text" value="touch grass" readonly>
-                    </div>
-    
-                    <div class="actions">
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
-                    </div>
-
-                </div>
-
-                <div class="todo-item">
-                    <label>
-                        <input type="checkbox">
-                        <span class="bubble personal"></span>
-                    </label>
-
-                    <div class="todo-content">
-                        <input type="text" value="touch moar grass" readonly>
-                    </div>
-    
-                    <div class="actions">
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
-                    </div>
-
-                </div> Shift Alt A to comment out highlighted code--> 
-
-            </div>
+            <div class="list" id="todo-list"></div>
         </section>
     </main>
     
-    <script> src="main.js"</script>
+    <script src="main.js"></script>
 
 </body>
 </html>
