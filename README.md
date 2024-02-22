@@ -1,1 +1,1 @@
-TodoList I use for myself
+TodoList for fun
