@@ -1,1 +1,3 @@
-TodoList for fun
+#ToDoList
+
+Fun Project to Test Basic Skills
